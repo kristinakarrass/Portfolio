@@ -10,6 +10,12 @@
 	max-height: 100%;
 }
 
-#upperparallax {
+/*#upperparallax {
 	left: 80%;
+}*/
+
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating) {
+	color: grey;
+	margin-right: 0px;
 }
+
