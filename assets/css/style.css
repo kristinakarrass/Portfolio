@@ -22,3 +22,8 @@
 .bio {
 	border-bottom: 5px black;
 }
+
+img:hover {
+	-webkit-filter: brightness(110%);
+}
+
