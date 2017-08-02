@@ -3,6 +3,8 @@
 
 <head>
     <title>Kristina Karrass Portfolio</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
@@ -13,10 +15,21 @@
     <nav>
         <div class="nav-wrapper black">
             <a href="#" class="brand-logo">Kristina Karrass</a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="#aboutMe">About Me</a></li>                
+                <li><a href="#projects">Projects</a></li>                
                 <li><a href="https://github.com/kristinakarrass" target="blank">Github</a></li>
                 <li><a href="https://linkedin.com/in/kristina-karrass" target="blank">Linkedin</a></li>
                 <li><a href="https://stackexchange.com/users/10015748/krikarr" target="blank">Stackoverflow</a></li>
+            </ul>
+            <ul class="side-nav" id="mobile-demo">
+                <li><a href="#aboutMe">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>                
+                <li><a href="https://github.com/kristinakarrass" target="blank">GitHub</a></li>
+                <li><a href="https://linkedin.com/in/kristina-karrass" target="blank">Linkedin</a></li>
+                <li><a href="https://stackexchange.com/users/10015748/krikarr" target="blank">Stackoverflow</a></li>
+
             </ul>
         </div>
     </nav>
@@ -24,11 +37,11 @@
     <div class="parallax-container">
         <div class="parallax"><img id="upperparallax" src="assets/images/wallpaper.png"></div>
     </div>
-    <div class="section grey lighten-2">
+    <div class="section grey lighten-2 center-align">
         <div class="row container bio">
-            <h2 class="header center">About Me</h2>
+            <h2 class="header center section scrollspy" id="aboutMe">About Me</h2>
             <div class="row">
-            <img src="./assets/images/kri.png" class="col l2 offset-l5 circle responsive-img" style="width: 200px; border: 5px black;">
+            <img src="./assets/images/kri.png" class="circle responsive-img" style="width: 200px; border: 5px black;">
             </div>
             <p class="grey-text text-darken-3 lighten-3" id="portfolio">I am Kristina Karrass, a Junior Full Stack Developer and have recently successfully graduated from the Coding Boot Camp at UNC Chapel Hill. The course offered an intense immersion into Front End and Back End technologies such as HTML5, CSS3, JavaScript, jQuery, MongoDB, Node.js, React.js, MySQL, AJAX, RESTful API. I have also learned incorporating libraries such as Bootstrap and Materialize to develop beautiful and appealing UIs.
             <br />
@@ -38,7 +51,7 @@
 
         <!-- =========================================================PROJECT======================================================================== -->
         <div class="row container">
-            <h2 class="header center">Projects</h2>
+            <h2 class="header center section scrollspy" id="projects">Projects</h2>
             <div class="col s12 m6 l4">
                 <div class="card">
                     <div class="card-image">
@@ -194,6 +207,7 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+    <script type="text/javascript" src="./assets/javascript/app.js"></script>
 </body>
 
 </html>

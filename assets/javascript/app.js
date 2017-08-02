@@ -1,4 +1,4 @@
-
-    $(document).ready(function(){
-      $('.parallax').parallax();
-    });
+$(document).ready(function() {
+    //mobile sidebar
+    $(".button-collapse").sideNav();
+});
